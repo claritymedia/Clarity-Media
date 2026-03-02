@@ -1,0 +1,7 @@
+{
+  "name": "Clarity Media #1",
+  "description": "High-conversion, dual-funnel website for Clarity Media showcasing Pulse Partners, Podcasting, and Photography services.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

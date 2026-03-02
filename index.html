@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clarity Media | AI-Powered Growth & Media Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                950: '#0d261f',
+                900: '#1a4d3e',
+                800: '#24634f',
+                700: '#2d7a5f',
+                600: '#369070',
+                500: '#3fa680',
+                400: '#55b893',
+                300: '#6bc5a0',
+                200: '#89d4b6',
+                100: '#a8e4cc',
+                50: '#d4f2e6',
+              },
+              accent: {
+                DEFAULT: '#ff6b35',
+                hover: '#e85a25'
+              },
+              neutral: {
+                900: '#1a1a1a',
+                700: '#404040',
+                500: '#737373',
+                300: '#d4d4d4',
+                100: '#f5f5f5',
+              }
+            },
+            fontFamily: {
+              sans: ['Outfit', 'sans-serif'],
+              serif: ['"Source Serif 4"', 'serif'],
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-out forwards',
+              'slide-up': 'slideUp 0.5s ease-out forwards',
+              'marquee': 'marquee 50s linear infinite',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              slideUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              marquee: {
+                '0%': { transform: 'translateX(0)' },
+                '100%': { transform: 'translateX(-50%)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom scrollbar for webkit */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #3fa680; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #2d7a5f; 
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <!-- GHL AI Agent Call Widget -->
+    <script 
+      src="https://beta.leadconnectorhq.com/loader.js"  
+      data-resources-url="https://beta.leadconnectorhq.com/chat-widget/loader.js" 
+      data-widget-id="69960ba3557f020a3fd56f87"> 
+    </script>
+    <script type="importmap">
+{
+  "imports": {
+    "framer-motion": "https://esm.sh/framer-motion@^12.29.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.12.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-neutral-50 text-neutral-900 font-sans antialiased">
+    <div id="root"></div>
+  </body>
+</html>
