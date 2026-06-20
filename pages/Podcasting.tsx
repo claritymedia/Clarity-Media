@@ -208,7 +208,7 @@ export const Podcasting: React.FC = () => {
             {/* Slot 1: Beyond The White Coat */}
             <div className="flex flex-col gap-3">
                 <iframe
-                    src="https://player.castos.com/player/2016357"
+                    src="https://player.castos.com/player/657375e335c640-99390715/2016357"
                     style={{ width: '100%', aspectRatio: '1/1', borderRadius: '12px', border: 'none' }}
                     allow="autoplay; fullscreen"
                     title="Podcast Episode"
@@ -219,7 +219,7 @@ export const Podcasting: React.FC = () => {
             {/* Slot 2: Mothers on a Mission */}
             <div className="flex flex-col gap-3">
                 <iframe
-                    src="https://player.castos.com/player/1756027"
+                    src="https://player.castos.com/player/657375e335c640-99390715/1756027"
                     style={{ width: '100%', aspectRatio: '1/1', borderRadius: '12px', border: 'none' }}
                     allow="autoplay; fullscreen"
                     title="Podcast Episode"
@@ -230,7 +230,7 @@ export const Podcasting: React.FC = () => {
             {/* Slot 3: Mode with Miss Ji */}
             <div className="flex flex-col gap-3">
                 <iframe
-                    src="https://player.castos.com/player/1727276"
+                    src="https://player.castos.com/player/657375e335c640-99390715/1727276"
                     style={{ width: '100%', aspectRatio: '1/1', borderRadius: '12px', border: 'none' }}
                     allow="autoplay; fullscreen"
                     title="Podcast Episode"
@@ -241,7 +241,7 @@ export const Podcasting: React.FC = () => {
             {/* Slot 4: DFW Socials Connect */}
             <div className="flex flex-col gap-3">
                 <iframe
-                    src="https://player.castos.com/player/2017149"
+                    src="https://player.castos.com/player/657375e335c640-99390715/2017149"
                     style={{ width: '100%', aspectRatio: '1/1', borderRadius: '12px', border: 'none' }}
                     allow="autoplay; fullscreen"
                     title="Podcast Episode"
@@ -252,7 +252,7 @@ export const Podcasting: React.FC = () => {
             {/* Slot 5: Just Music */}
             <div className="flex flex-col gap-3">
                 <iframe
-                    src="https://player.castos.com/player/1727283"
+                    src="https://player.castos.com/player/657375e335c640-99390715/1727283"
                     style={{ width: '100%', aspectRatio: '1/1', borderRadius: '12px', border: 'none' }}
                     allow="autoplay; fullscreen"
                     title="Podcast Episode"
@@ -263,7 +263,7 @@ export const Podcasting: React.FC = () => {
             {/* Slot 6: The Elevated Mindset */}
             <div className="flex flex-col gap-3">
                 <iframe
-                    src="https://player.castos.com/player/1760414"
+                    src="https://player.castos.com/player/657375e335c640-99390715/1760414"
                     style={{ width: '100%', aspectRatio: '1/1', borderRadius: '12px', border: 'none' }}
                     allow="autoplay; fullscreen"
                     title="Podcast Episode"
