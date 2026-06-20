@@ -207,67 +207,91 @@ export const Podcasting: React.FC = () => {
             
             {/* Slot 1: Beyond The White Coat */}
             <div className="flex flex-col gap-3">
-                <iframe
-                    src="https://player.castos.com/player/657375e335c640-99390715/2016357"
-                    style={{ width: '100%', aspectRatio: '1/1', borderRadius: '12px', border: 'none' }}
-                    allow="autoplay; fullscreen"
-                    title="Podcast Episode"
-                ></iframe>
+                <video 
+                    controls 
+                    playsInline 
+                    preload="metadata" 
+                    poster="https://storage.googleapis.com/msgsndr/DGQtullATQRfPaFbP0kV/media/698eb34d00849881acf600b9.jpeg"
+                    style={{ width: '100%', aspectRatio: '1/1', objectFit: 'cover', borderRadius: '12px', backgroundColor: '#000' }}
+                >
+                    <source src="https://episodes.castos.com/657375e335c640-99390715/2016357/c1e-2pq0dim9gz3unozn8p-kp44xoq3ijdx-bqyuyh.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
                 <p className="text-xl font-bold text-neutral-900">Beyond The White Coat</p>
             </div>
 
             {/* Slot 2: Mothers on a Mission */}
             <div className="flex flex-col gap-3">
-                <iframe
-                    src="https://player.castos.com/player/657375e335c640-99390715/1756027"
-                    style={{ width: '100%', aspectRatio: '1/1', borderRadius: '12px', border: 'none' }}
-                    allow="autoplay; fullscreen"
-                    title="Podcast Episode"
-                ></iframe>
+                <video 
+                    controls 
+                    playsInline 
+                    preload="metadata" 
+                    poster="https://storage.googleapis.com/msgsndr/DGQtullATQRfPaFbP0kV/media/698eb367772de9e6be84ce6c.jpeg"
+                    style={{ width: '100%', aspectRatio: '1/1', objectFit: 'cover', borderRadius: '12px', backgroundColor: '#000' }}
+                >
+                    <source src="https://episodes.castos.com/657375e335c640-99390715/1756027/c1e-d3n16u6ow85h3g84j0-04r31392brkv-vb8evy.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
                 <p className="text-xl font-bold text-neutral-900">Mothers on a Mission</p>
             </div>
 
             {/* Slot 3: Mode with Miss Ji */}
             <div className="flex flex-col gap-3">
-                <iframe
-                    src="https://player.castos.com/player/657375e335c640-99390715/1727276"
-                    style={{ width: '100%', aspectRatio: '1/1', borderRadius: '12px', border: 'none' }}
-                    allow="autoplay; fullscreen"
-                    title="Podcast Episode"
-                ></iframe>
+                <video 
+                    controls 
+                    playsInline 
+                    preload="metadata" 
+                    poster="https://storage.googleapis.com/msgsndr/DGQtullATQRfPaFbP0kV/media/698eb3c700849875b7f65063.jpeg"
+                    style={{ width: '100%', aspectRatio: '1/1', objectFit: 'cover', borderRadius: '12px', backgroundColor: '#000' }}
+                >
+                    <source src="https://episodes.castos.com/657375e335c640-99390715/1727276/c1e-4pqogi4gqorh8jgd58-04r7mmmjhw64-vep3x0.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
                 <p className="text-xl font-bold text-neutral-900">Mode with Miss Ji</p>
             </div>
 
             {/* Slot 4: DFW Socials Connect */}
             <div className="flex flex-col gap-3">
-                <iframe
-                    src="https://player.castos.com/player/657375e335c640-99390715/2017149"
-                    style={{ width: '100%', aspectRatio: '1/1', borderRadius: '12px', border: 'none' }}
-                    allow="autoplay; fullscreen"
-                    title="Podcast Episode"
-                ></iframe>
+                <video 
+                    controls 
+                    playsInline 
+                    preload="metadata" 
+                    poster="https://storage.googleapis.com/msgsndr/DGQtullATQRfPaFbP0kV/media/698eb359008498676af601e1.jpeg"
+                    style={{ width: '100%', aspectRatio: '1/1', objectFit: 'cover', borderRadius: '12px', backgroundColor: '#000' }}
+                >
+                    <source src="https://episodes.castos.com/657375e335c640-99390715/2017149/c1e-odnp4c2w868ujoxqn2-kp495q3vixxq-1uyqfk.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
                 <p className="text-xl font-bold text-neutral-900">DFW Socials Connect</p>
             </div>
 
             {/* Slot 5: Just Music */}
             <div className="flex flex-col gap-3">
-                <iframe
-                    src="https://player.castos.com/player/657375e335c640-99390715/1727283"
-                    style={{ width: '100%', aspectRatio: '1/1', borderRadius: '12px', border: 'none' }}
-                    allow="autoplay; fullscreen"
-                    title="Podcast Episode"
-                ></iframe>
+                <video 
+                    controls 
+                    playsInline 
+                    preload="metadata" 
+                    poster="https://storage.googleapis.com/msgsndr/DGQtullATQRfPaFbP0kV/media/698eb35f772de9e1e584c061.png"
+                    style={{ width: '100%', aspectRatio: '1/1', objectFit: 'cover', borderRadius: '12px', backgroundColor: '#000' }}
+                >
+                    <source src="https://episodes.castos.com/657375e335c640-99390715/1727283/c1e-d3n16u6kpdvb211qgm-ddkxk534f4p4-lzul4l.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
                 <p className="text-xl font-bold text-neutral-900">Just Music</p>
             </div>
 
             {/* Slot 6: The Elevated Mindset */}
             <div className="flex flex-col gap-3">
-                <iframe
-                    src="https://player.castos.com/player/657375e335c640-99390715/1760414"
-                    style={{ width: '100%', aspectRatio: '1/1', borderRadius: '12px', border: 'none' }}
-                    allow="autoplay; fullscreen"
-                    title="Podcast Episode"
-                ></iframe>
+                <video 
+                    controls 
+                    playsInline 
+                    preload="metadata" 
+                    poster="https://storage.googleapis.com/msgsndr/DGQtullATQRfPaFbP0kV/media/698eb371008498b48bf613ba.jpeg"
+                    style={{ width: '100%', aspectRatio: '1/1', objectFit: 'cover', borderRadius: '12px', backgroundColor: '#000' }}
+                >
+                    <source src="https://episodes.castos.com/657375e335c640-99390715/1760414/c1e-v53w1u95p7gsww80wz-gd48790na77n-fz0qyd.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
                 <p className="text-xl font-bold text-neutral-900">The Elevated Mindset</p>
             </div>
 
