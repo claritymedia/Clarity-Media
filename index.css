@@ -101,3 +101,22 @@ button.hover\:bg-accent-hover:hover { background-color: var(--color-accent-hover
 
 input.bg-white, textarea.bg-white, select.bg-white { background-color: #ffffff; }
 input.bg-neutral-100, textarea.bg-neutral-100, select.bg-neutral-100 { background-color: var(--color-neutral-100); }
+
+/* -------------------------------------------------------------
+   GHL prospecting widget - readable field text.
+   The embed writes an inline style of color: #f9f6f6 onto every
+   input/select, which is invisible against the white field
+   background. Inline styles can only be overridden with
+   !important, so scope a readable colour to the widget wrapper.
+   ------------------------------------------------------------- */
+#dna-form input,
+#dna-form textarea,
+#dna-form select {
+  color: #1a1a1a !important;
+}
+
+#dna-form input::placeholder,
+#dna-form textarea::placeholder {
+  color: #737373 !important;
+  opacity: 1;
+}
