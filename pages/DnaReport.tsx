@@ -433,52 +433,63 @@ export const DnaReport: React.FC = () => {
     <Layout>
       {/* ================= HERO + FORM ================= */}
       <section className="relative overflow-hidden bg-primary-950">
+        {/* Ambient brand background */}
         <div className="absolute inset-0 z-0">
-          {heroImageOk && (
-            <img
-              src={HERO_IMAGE}
-              alt="The Pulse Partners team"
-              onError={() => setHeroImageOk(false)}
-              className="h-full w-full object-cover object-center"
-            />
-          )}
-          {/* Dark green overlay sits behind the copy, keeping the team visible */}
-          <div className="absolute inset-0 bg-gradient-to-r from-primary-950 via-primary-950/85 to-primary-950/35" />
-          <div className="absolute inset-0 bg-gradient-to-t from-primary-950 via-transparent to-primary-950/40" />
+          <div className="absolute inset-0 bg-gradient-to-br from-primary-950 via-primary-900 to-primary-950" />
+          <div className="absolute -top-40 -right-24 h-96 w-96 rounded-full bg-primary-500/20 blur-3xl" />
+          <div className="absolute -bottom-24 -left-16 h-80 w-80 rounded-full bg-primary-700/25 blur-3xl" />
         </div>
 
         <div className="relative z-10 container mx-auto max-w-7xl px-4 py-20 md:px-6 md:py-28">
-          <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
-            {/* ---- Left: copy ---- */}
-            <div>
-              <FadeIn delay={0.05}>
-                <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary-400/30 bg-primary-900/50 px-4 py-2 text-sm font-bold text-primary-200 backdrop-blur-sm">
-                  <span className="h-2 w-2 animate-pulse rounded-full bg-primary-300" />
-                  Free Business DNA Report
+          {/* ---- Headline ---- */}
+          <div className="mb-12 max-w-3xl">
+            <FadeIn delay={0.05}>
+              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary-400/30 bg-primary-900/50 px-4 py-2 text-sm font-bold text-primary-200 backdrop-blur-sm">
+                <span className="h-2 w-2 animate-pulse rounded-full bg-primary-300" />
+                Free Business DNA Report
+              </div>
+
+              <h1 className="mb-5 text-4xl font-bold leading-tight tracking-tight text-white md:text-5xl lg:text-6xl">
+                Discover What&apos;s Really <br className="hidden sm:block" />
+                <span className="text-primary-300">Holding Your Business Back</span>
+              </h1>
+
+              <Heartbeat className="mb-6 text-primary-400/70" />
+            </FadeIn>
+
+            <FadeIn delay={0.2}>
+              <p className="mb-3 text-xl font-semibold text-white md:text-2xl">
+                Get Your Free Business DNA Report
+              </p>
+              <p className="text-lg leading-relaxed font-light text-neutral-300">
+                Our AI-powered platform analyzes 50+ digital performance indicators to reveal
+                hidden growth opportunities and create a personalized roadmap.
+              </p>
+            </FadeIn>
+          </div>
+
+          <div className="grid items-start gap-12 lg:grid-cols-2 lg:gap-16">
+            {/* ---- Left: the Pulse Partners team ---- */}
+            <FadeIn delay={0.3} direction="left">
+              <div>
+                {heroImageOk ? (
+                  <img
+                    src={HERO_IMAGE}
+                    alt="The Pulse Partners team"
+                    onError={() => setHeroImageOk(false)}
+                    className="w-full rounded-3xl border border-white/15 shadow-2xl"
+                  />
+                ) : (
+                  <div className="flex aspect-square w-full items-center justify-center rounded-3xl border border-white/15 bg-gradient-to-br from-primary-800 to-primary-950 shadow-2xl">
+                    <Dna size={72} className="text-primary-400/60" />
+                  </div>
+                )}
+
+                <div className="mt-8">
+                  <Button variant="accent" size="lg" icon={<ArrowRight size={20} />} fullWidth onClick={scrollToForm}>
+                    Get My Free DNA Report
+                  </Button>
                 </div>
-
-                <h1 className="mb-5 text-4xl font-bold leading-tight tracking-tight text-white md:text-5xl lg:text-6xl">
-                  Discover What&apos;s Really <br className="hidden sm:block" />
-                  <span className="text-primary-300">Holding Your Business Back</span>
-                </h1>
-
-                <Heartbeat className="mb-6 text-primary-400/70" />
-              </FadeIn>
-
-              <FadeIn delay={0.2}>
-                <p className="mb-3 text-xl font-semibold text-white md:text-2xl">
-                  Get Your Free Business DNA Report
-                </p>
-                <p className="mb-8 max-w-xl text-lg leading-relaxed font-light text-neutral-300">
-                  Our AI-powered platform analyzes 50+ digital performance indicators to reveal
-                  hidden growth opportunities and create a personalized roadmap.
-                </p>
-              </FadeIn>
-
-              <FadeIn delay={0.35}>
-                <Button variant="accent" size="lg" icon={<ArrowRight size={20} />} onClick={scrollToForm}>
-                  Get My Free DNA Report
-                </Button>
 
                 <ul className="mt-8 grid gap-3 sm:grid-cols-2">
                   {trustBullets.map((item) => (
@@ -490,10 +501,9 @@ export const DnaReport: React.FC = () => {
                     </li>
                   ))}
                 </ul>
-              </FadeIn>
-            </div>
+              </div>
+            </FadeIn>
 
-            {/* ---- Right: glassmorphism form card ---- */}
             <FadeIn delay={0.3} direction="none">
               <div
                 id="dna-form"
