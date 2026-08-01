@@ -109,7 +109,7 @@ input.bg-neutral-100, textarea.bg-neutral-100, select.bg-neutral-100 { backgroun
    background. Inline styles can only be overridden with
    !important, so scope a readable colour to the widget wrapper.
    ------------------------------------------------------------- */
-#dna-form input,
+#dna-form input:not([type=radio]):not([type=checkbox]),
 #dna-form textarea,
 #dna-form select {
   color: #1a1a1a !important;
