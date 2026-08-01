@@ -35,13 +35,14 @@ import {
  * Dedicated landing page for the Business DNA Report lead magnet.
  * The form is the GoHighLevel prospecting widget embed.
  *
- * TODO (asset): upload the Pulse Partners team hero image to
- * /public/images/pulse-partners-dna-hero.png (or update HERO_IMAGE below).
- * Until the file exists the hero falls back to the brand gradient, so the
- * page will never look broken.
+ * The hero photo is served as WebP with a responsive srcset (640w / 1100w),
+ * falls back to the original PNG for older browsers, and falls back again to
+ * the brand gradient if the asset is missing, so the page never looks broken.
  */
 
-const HERO_IMAGE = '/images/pulse-partners-dna-hero.png';
+const HERO_IMAGE = "/images/pulse-partners-dna-hero.webp";
+const HERO_IMAGE_SM = "/images/pulse-partners-dna-hero-640.webp";
+const HERO_IMAGE_FALLBACK = "/images/pulse-partners-dna-hero.png";
 
 const GHL_WIDGET_SRC =
   'https://services.leadconnectorhq.com/prospecting/client/widget-embed.js';
@@ -440,9 +441,9 @@ export const DnaReport: React.FC = () => {
           <div className="absolute -bottom-24 -left-16 h-80 w-80 rounded-full bg-primary-700/25 blur-3xl" />
         </div>
 
-        <div className="relative z-10 container mx-auto max-w-7xl px-4 py-20 md:px-6 md:py-28">
+        <div className="relative z-10 container mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-24">
           {/* ---- Headline ---- */}
-          <div className="mb-12 max-w-3xl">
+          <div className="mb-10 max-w-4xl md:mb-12">
             <FadeIn delay={0.05}>
               <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary-400/30 bg-primary-900/50 px-4 py-2 text-sm font-bold text-primary-200 backdrop-blur-sm">
                 <span className="h-2 w-2 animate-pulse rounded-full bg-primary-300" />
@@ -473,12 +474,22 @@ export const DnaReport: React.FC = () => {
             <FadeIn delay={0.3} direction="left">
               <div>
                 {heroImageOk ? (
-                  <img
-                    src={HERO_IMAGE}
-                    alt="The Pulse Partners team"
-                    onError={() => setHeroImageOk(false)}
-                    className="w-full rounded-3xl border border-white/15 shadow-2xl"
-                  />
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcSet={HERO_IMAGE_SM + " 640w, " + HERO_IMAGE + " 1100w"}
+                      sizes="(min-width: 1024px) 560px, 100vw"
+                    />
+                    <img
+                      src={HERO_IMAGE_FALLBACK}
+                      alt="The Pulse Partners team"
+                      width={1254}
+                      height={1254}
+                      decoding="async"
+                      onError={() => setHeroImageOk(false)}
+                      className="w-full rounded-3xl border border-white/15 shadow-2xl"
+                    />
+                  </picture>
                 ) : (
                   <div className="flex aspect-square w-full items-center justify-center rounded-3xl border border-white/15 bg-gradient-to-br from-primary-800 to-primary-950 shadow-2xl">
                     <Dna size={72} className="text-primary-400/60" />
