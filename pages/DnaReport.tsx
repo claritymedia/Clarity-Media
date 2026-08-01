@@ -27,7 +27,6 @@ import {
   Zap,
   PhoneOff,
   EyeOff,
-  Quote,
 } from 'lucide-react';
 
 /**
@@ -225,38 +224,6 @@ const whyUs = [
     title: 'AI-powered growth with a human heartbeat',
     body: 'Automation handles the repetitive work so our team can focus on your community and your customers.',
   },
-];
-
-/* TODO (content): replace the placeholder team entries below with real
-   names, roles and photos before this page is merged to production. */
-const team = [
-  {
-    initials: 'L',
-    name: 'Lee',
-    role: 'Founder',
-    bio: 'Started Clarity Media after watching his father run a business without the support he deserved.',
-  },
-  {
-    initials: 'PP',
-    name: 'Your Strategy Partner',
-    role: 'Strategy and Growth',
-    bio: 'Owns your roadmap, reviews the numbers with you weekly and decides what moves next.',
-  },
-  {
-    initials: 'PP',
-    name: 'Your Content Producer',
-    role: 'Content and Media',
-    bio: 'Captures and produces the photography, podcasting and social content your community sees.',
-  },
-];
-
-/* TODO (content): these testimonial slots are intentionally left as
-   placeholders. Do not publish invented client quotes. Drop in real,
-   attributable testimonials before merging. */
-const testimonials = [
-  { quote: '[Add a real client testimonial here.]', name: '[Client name]', role: '[Business, City]' },
-  { quote: '[Add a real client testimonial here.]', name: '[Client name]', role: '[Business, City]' },
-  { quote: '[Add a real client testimonial here.]', name: '[Client name]', role: '[Business, City]' },
 ];
 
 const faqs = [
@@ -832,66 +799,6 @@ export const DnaReport: React.FC = () => {
               </FadeIn>
             ))}
           </div>
-        </div>
-      </Section>
-
-      {/* ================= MEET THE TEAM ================= */}
-      <Section background="light">
-        <div className="mx-auto mb-14 max-w-2xl text-center">
-          <FadeIn>
-            <Heading level={2} align="center" className="mb-4 text-neutral-900">
-              Meet the Team Reading Your Report
-            </Heading>
-            <p className="text-lg text-neutral-600">
-              A real three-person team, not a ticket queue.
-            </p>
-          </FadeIn>
-        </div>
-
-        <div className="grid gap-6 md:grid-cols-3">
-          {team.map((member, i) => (
-            <FadeIn key={member.name} delay={i * 0.12}>
-              <Card className="h-full rounded-2xl border border-neutral-200 bg-white p-7 text-center">
-                <span className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-primary-900 text-2xl font-bold text-white">
-                  {member.initials}
-                </span>
-                <h3 className="text-lg font-semibold text-neutral-900">{member.name}</h3>
-                <p className="mb-3 text-sm font-medium text-primary-700">{member.role}</p>
-                <p className="text-sm leading-relaxed text-neutral-600">{member.bio}</p>
-              </Card>
-            </FadeIn>
-          ))}
-        </div>
-      </Section>
-
-      {/* ================= TESTIMONIALS ================= */}
-      {/* NOTE: placeholder content. Replace with real, attributable
-          testimonials before merging to production. */}
-      <Section background="white">
-        <div className="mx-auto mb-14 max-w-2xl text-center">
-          <FadeIn>
-            <Heading level={2} align="center" className="mb-4 text-neutral-900">
-              What Business Owners Say
-            </Heading>
-            <p className="text-lg text-neutral-600">
-              Real words from the owners we work alongside.
-            </p>
-          </FadeIn>
-        </div>
-
-        <div className="grid gap-6 md:grid-cols-3">
-          {testimonials.map((item, i) => (
-            <FadeIn key={i} delay={i * 0.12}>
-              <Card className="h-full rounded-2xl border border-neutral-200 bg-neutral-50 p-7">
-                <Quote size={28} className="mb-4 text-primary-300" />
-                <p className="mb-6 leading-relaxed text-neutral-700">{item.quote}</p>
-                <div className="border-t border-neutral-200 pt-4">
-                  <p className="font-semibold text-neutral-900">{item.name}</p>
-                  <p className="text-sm text-neutral-500">{item.role}</p>
-                </div>
-              </Card>
-            </FadeIn>
-          ))}
         </div>
       </Section>
 
