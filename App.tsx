@@ -7,11 +7,12 @@ import { Photography } from './pages/Photography';
 import { About } from './pages/About';
 import { Contact } from './pages/Contact';
 import { Booking } from './pages/Booking';
+import { DnaReport } from './pages/DnaReport';
 
 // ScrollToTop component for HashRouter
 const ScrollToTop = () => {
   const { pathname } = React.useMemo(() => window.location, []);
-  
+
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
@@ -31,6 +32,7 @@ const App: React.FC = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/booking" element={<Booking />} />
+        <Route path="/dna-report" element={<DnaReport />} />
         <Route path="/resources" element={<Home />} /> {/* Placeholder */}
         <Route path="/application" element={<Contact />} /> {/* Placeholder */}
       </Routes>
