@@ -61,3 +61,43 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* ---------------------------------------------------------------------
+   Third-party widget CSS compatibility
+
+   The GoHighLevel prospecting widget embedded on /dna-report injects the
+   Flowbite 2.3.0 stylesheet into the document head. That sheet is NOT in a
+   cascade layer, and its Preflight reset declares:
+
+       button, input, select, optgroup, textarea {
+         background-color: transparent;
+       }
+
+   Unlayered rules outrank everything in a cascade layer, so Tailwind utility
+   classes lose. The practical effect is that once the widget script has run,
+   every <button> in the SPA renders with a transparent background - white
+   label on a white page - and it stays broken as the visitor navigates to
+   other routes, because the injected <link> is never removed.
+
+   The rules below sit outside any layer and are more specific than the
+   reset (element + class beats element), so they restore the palette on
+   form controls only. They are inert when the widget is not present.
+   --------------------------------------------------------------------- */
+button.bg-primary-950 { background-color: var(--color-primary-950); }
+button.bg-primary-900 { background-color: var(--color-primary-900); }
+button.bg-primary-800 { background-color: var(--color-primary-800); }
+button.bg-primary-100 { background-color: var(--color-primary-100); }
+button.bg-primary-50  { background-color: var(--color-primary-50); }
+button.bg-accent      { background-color: var(--color-accent); }
+button.bg-neutral-900 { background-color: var(--color-neutral-900); }
+button.bg-neutral-100 { background-color: var(--color-neutral-100); }
+button.bg-white       { background-color: #ffffff; }
+
+button.hover\:bg-primary-800:hover  { background-color: var(--color-primary-800); }
+button.hover\:bg-primary-700:hover  { background-color: var(--color-primary-700); }
+button.hover\:bg-primary-200:hover  { background-color: var(--color-primary-200); }
+button.hover\:bg-primary-50:hover   { background-color: var(--color-primary-50); }
+button.hover\:bg-accent-hover:hover { background-color: var(--color-accent-hover); }
+
+input.bg-white, textarea.bg-white, select.bg-white { background-color: #ffffff; }
+input.bg-neutral-100, textarea.bg-neutral-100, select.bg-neutral-100 { background-color: var(--color-neutral-100); }

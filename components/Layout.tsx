@@ -10,6 +10,7 @@ const navLinks = [
   { label: 'Photography', href: '/photography' },
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
+  { label: 'Get Your Business DNA Report', href: '/dna-report' },
 ];
 
 export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {

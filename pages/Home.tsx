@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { Layout } from '../components/Layout';
-import { Button, Section, Heading, FadeIn, Modal } from '../components/ui/UI';
+import { Button, Section, Heading, FadeIn } from '../components/ui/UI';
 import { ArrowRight, Check, Users, Mic, Camera, TrendingUp, BarChart3, Globe, Mail, Calendar, Workflow, GraduationCap, Phone, Star, Smartphone, MessageSquare, Award } from 'lucide-react';
 
 const softwareReplaces = [
@@ -35,19 +35,6 @@ const teamPhoto = "https://storage.googleapis.com/msgsndr/DGQtullATQRfPaFbP0kV/m
 const podcastPhoto = "https://storage.googleapis.com/msgsndr/DGQtullATQRfPaFbP0kV/media/699343a867cb8440809b24d0.png";
 
 export const Home: React.FC = () => {
-  const [isDNAModalOpen, setIsDNAModalOpen] = useState(false);
-
-  useEffect(() => {
-    if (isDNAModalOpen) {
-      // Load GHL form embed script dynamically when modal opens
-      const script = document.createElement('script');
-      script.src = "https://link.msgsndr.com/js/form_embed.js";
-      script.type = "text/javascript";
-      script.async = true;
-      document.body.appendChild(script);
-    }
-  }, [isDNAModalOpen]);
-
   return (
     <Layout>
       {/* Hero Section */}
@@ -82,45 +69,19 @@ export const Home: React.FC = () => {
 
           <FadeIn delay={0.5}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                variant="accent" 
-                size="lg" 
-                icon={<ArrowRight size={20} />}
-                onClick={() => setIsDNAModalOpen(true)}
-              >
-                Get Your Free Small Business DNA Report
-              </Button>
+              <Link to="/dna-report">
+                <Button 
+                  variant="accent" 
+                  size="lg" 
+                  icon={<ArrowRight size={20} />}
+                >
+                  Get Your Free Small Business DNA Report
+                </Button>
+              </Link>
             </div>
           </FadeIn>
         </div>
       </section>
-
-      {/* DNA Report Modal */}
-      <Modal 
-        isOpen={isDNAModalOpen} 
-        onClose={() => setIsDNAModalOpen(false)}
-        title="Your Free Small Business DNA Report"
-      >
-        <div className="w-full flex items-center justify-center bg-neutral-50 overflow-hidden">
-          <iframe
-            src="https://api.leadconnectorhq.com/widget/form/gyvtiLQK6aLOOnfU21xn"
-            style={{ width: '100%', height: '837px', border: 'none', borderRadius: '3px' }}
-            id="inline-gyvtiLQK6aLOOnfU21xn" 
-            data-layout="{'id':'INLINE'}"
-            data-trigger-type="alwaysShow"
-            data-trigger-value=""
-            data-activation-type="alwaysActivated"
-            data-activation-value=""
-            data-deactivation-type="neverDeactivate"
-            data-deactivation-value=""
-            data-form-name="DNA Report"
-            data-height="837"
-            data-layout-iframe-id="inline-gyvtiLQK6aLOOnfU21xn"
-            data-form-id="gyvtiLQK6aLOOnfU21xn"
-            title="DNA Report"
-          ></iframe>
-        </div>
-      </Modal>
 
       {/* GHL Integration & Awards Divider */}
       <div className="bg-white border-y border-neutral-100 py-12 overflow-hidden">
@@ -297,7 +258,9 @@ export const Home: React.FC = () => {
                 Join a partnership that puts a team in your corner and AI-powered growth in your business.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-                <Button variant="primary" size="lg" onClick={() => setIsDNAModalOpen(true)}>Get Your Free Small Business DNA Report</Button>
+                <Link to="/dna-report">
+                    <Button variant="primary" size="lg">Get Your Free Small Business DNA Report</Button>
+                </Link>
             </div>
         </FadeIn>
       </Section>
