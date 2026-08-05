@@ -205,7 +205,7 @@ export const Podcasting: React.FC = () => {
         <Heading level={2} className="mb-12">Current Shows</Heading>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
-            {/* Slot 1: Beyond The White Coat */}
+            {/* Slot 1: Beyond The White Coat (CDN-hosted) */}
             <div className="flex flex-col gap-3">
                 <video 
                     controls 
