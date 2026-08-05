@@ -242,9 +242,9 @@ export const Podcasting: React.FC = () => {
                     playsInline 
                     preload="metadata" 
                     poster="https://storage.googleapis.com/msgsndr/DGQtullATQRfPaFbP0kV/media/698eb3c700849875b7f65063.jpeg"
-                    style={{ width: '100%', aspectRatio: '1/1', objectFit: 'cover', borderRadius: '12px', backgroundColor: '#000' }}
+                    style={{ width: '100%', aspectRatio: '1/1', objectFit: 'contain', borderRadius: '12px', backgroundColor: '#000' }}
                 >
-                    <source src="https://episodes.castos.com/657375e335c640-99390715/1727276/c1e-4pqogi4gqorh8jgd58-04r7mmmjhw64-vep3x0.mp4" type="video/mp4" />
+                    <source src="https://assets.cdn.filesafe.space/DGQtullATQRfPaFbP0kV/media/6a7393ce6c6452402b04936c.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
                 <p className="text-xl font-bold text-neutral-900">Mode with Miss Ji</p>
@@ -257,9 +257,9 @@ export const Podcasting: React.FC = () => {
                     playsInline 
                     preload="metadata" 
                     poster="https://storage.googleapis.com/msgsndr/DGQtullATQRfPaFbP0kV/media/698eb359008498676af601e1.jpeg"
-                    style={{ width: '100%', aspectRatio: '1/1', objectFit: 'cover', borderRadius: '12px', backgroundColor: '#000' }}
+                    style={{ width: '100%', aspectRatio: '1/1', objectFit: 'contain', borderRadius: '12px', backgroundColor: '#000' }}
                 >
-                    <source src="https://episodes.castos.com/657375e335c640-99390715/2017149/c1e-odnp4c2w868ujoxqn2-kp495q3vixxq-1uyqfk.mp4" type="video/mp4" />
+                    <source src="https://assets.cdn.filesafe.space/DGQtullATQRfPaFbP0kV/media/6a738ee76c6452402bfd976b.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
                 <p className="text-xl font-bold text-neutral-900">DFW Socials Connect</p>
@@ -272,9 +272,9 @@ export const Podcasting: React.FC = () => {
                     playsInline 
                     preload="metadata" 
                     poster="https://storage.googleapis.com/msgsndr/DGQtullATQRfPaFbP0kV/media/698eb35f772de9e1e584c061.png"
-                    style={{ width: '100%', aspectRatio: '1/1', objectFit: 'cover', borderRadius: '12px', backgroundColor: '#000' }}
+                    style={{ width: '100%', aspectRatio: '1/1', objectFit: 'contain', borderRadius: '12px', backgroundColor: '#000' }}
                 >
-                    <source src="https://episodes.castos.com/657375e335c640-99390715/1727283/c1e-d3n16u6kpdvb211qgm-ddkxk534f4p4-lzul4l.mp4" type="video/mp4" />
+                    <source src="https://assets.cdn.filesafe.space/DGQtullATQRfPaFbP0kV/media/6a738c0cf325d74f8f7145c5.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
                 <p className="text-xl font-bold text-neutral-900">Just Music</p>
