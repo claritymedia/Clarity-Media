@@ -227,9 +227,9 @@ export const Podcasting: React.FC = () => {
                     playsInline 
                     preload="metadata" 
                     poster="https://storage.googleapis.com/msgsndr/DGQtullATQRfPaFbP0kV/media/698eb367772de9e6be84ce6c.jpeg"
-                    style={{ width: '100%', aspectRatio: '1/1', objectFit: 'cover', borderRadius: '12px', backgroundColor: '#000' }}
+                    style={{ width: '100%', aspectRatio: '1/1', objectFit: 'contain', borderRadius: '12px', backgroundColor: '#000' }}
                 >
-                    <source src="https://episodes.castos.com/657375e335c640-99390715/1756027/c1e-d3n16u6ow85h3g84j0-04r31392brkv-vb8evy.mp4" type="video/mp4" />
+                    <source src="https://assets.cdn.filesafe.space/DGQtullATQRfPaFbP0kV/media/6a738a2e50bc0683ca565d3f.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
                 <p className="text-xl font-bold text-neutral-900">Mothers on a Mission</p>
