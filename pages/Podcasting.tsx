@@ -214,7 +214,7 @@ export const Podcasting: React.FC = () => {
                     poster="https://storage.googleapis.com/msgsndr/DGQtullATQRfPaFbP0kV/media/698eb34d00849881acf600b9.jpeg"
                     style={{ width: '100%', aspectRatio: '1/1', objectFit: 'cover', borderRadius: '12px', backgroundColor: '#000' }}
                 >
-                    <source src="https://episodes.castos.com/657375e335c640-99390715/2016357/c1e-2pq0dim9gz3unozn8p-kp44xoq3ijdx-bqyuyh.mp4" type="video/mp4" />
+                    <source src="https://assets.cdn.filesafe.space/DGQtullATQRfPaFbP0kV/media/6a7379c247e61ee43a6b2df6.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
                 <p className="text-xl font-bold text-neutral-900">Beyond The White Coat</p>
