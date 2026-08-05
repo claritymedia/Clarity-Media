@@ -280,19 +280,19 @@ export const Podcasting: React.FC = () => {
                 <p className="text-xl font-bold text-neutral-900">Just Music</p>
             </div>
 
-            {/* Slot 6: The Elevated Mindset */}
+            {/* Slot 6: The Genesis Podcast (CDN-hosted) */}
             <div className="flex flex-col gap-3">
                 <video 
                     controls 
                     playsInline 
                     preload="metadata" 
-                    poster="https://storage.googleapis.com/msgsndr/DGQtullATQRfPaFbP0kV/media/698eb371008498b48bf613ba.jpeg"
-                    style={{ width: '100%', aspectRatio: '1/1', objectFit: 'cover', borderRadius: '12px', backgroundColor: '#000' }}
+                    poster="/images/genesis-cover.png"
+                    style={{ width: '100%', aspectRatio: '1/1', objectFit: 'contain', borderRadius: '12px', backgroundColor: '#000' }}
                 >
-                    <source src="https://episodes.castos.com/657375e335c640-99390715/1760414/c1e-v53w1u95p7gsww80wz-gd48790na77n-fz0qyd.mp4" type="video/mp4" />
+                    <source src="https://assets.cdn.filesafe.space/DGQtullATQRfPaFbP0kV/media/6a7396ad329b76ca7bc69f62.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
-                <p className="text-xl font-bold text-neutral-900">The Elevated Mindset</p>
+                <p className="text-xl font-bold text-neutral-900">The Genesis Podcast</p>
             </div>
 
         </div>
