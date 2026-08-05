@@ -212,7 +212,7 @@ export const Podcasting: React.FC = () => {
                     playsInline 
                     preload="metadata" 
                     poster="https://storage.googleapis.com/msgsndr/DGQtullATQRfPaFbP0kV/media/698eb34d00849881acf600b9.jpeg"
-                    style={{ width: '100%', aspectRatio: '16/9', objectFit: 'contain', borderRadius: '12px', backgroundColor: '#000' }}
+                    style={{ width: '100%', aspectRatio: '1/1', objectFit: 'contain', borderRadius: '12px', backgroundColor: '#000' }}
                 >
                     <source src="https://assets.cdn.filesafe.space/DGQtullATQRfPaFbP0kV/media/6a7379c247e61ee43a6b2df6.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
