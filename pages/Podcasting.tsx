@@ -286,7 +286,7 @@ export const Podcasting: React.FC = () => {
                     controls 
                     playsInline 
                     preload="metadata" 
-                    poster="/images/genesis-cover.png"
+                    poster="https://assets.cdn.filesafe.space/DGQtullATQRfPaFbP0kV/media/6a73b6baca39587c983e21a3.png"
                     style={{ width: '100%', aspectRatio: '1/1', objectFit: 'contain', borderRadius: '12px', backgroundColor: '#000' }}
                 >
                     <source src="https://assets.cdn.filesafe.space/DGQtullATQRfPaFbP0kV/media/6a7396ad329b76ca7bc69f62.mp4" type="video/mp4" />
