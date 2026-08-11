@@ -114,7 +114,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
       {/* Footer */}
       <footer className="bg-neutral-900 text-white pt-16 pb-8 border-t border-neutral-800">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
             
             {/* Brand Column */}
             <div className="space-y-6">
@@ -162,19 +162,6 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
               </ul>
             </div>
 
-            {/* Newsletter */}
-            <div>
-              <h4 className="font-bold text-lg mb-6">Stay Updated</h4>
-              <p className="text-neutral-400 text-sm mb-4">Join our newsletter for the latest community growth strategies.</p>
-              <form className="space-y-3" onSubmit={(e) => e.preventDefault()}>
-                <input 
-                  type="email" 
-                  placeholder="Email address" 
-                  className="w-full bg-neutral-800 border border-neutral-700 rounded-lg px-4 py-3 text-white placeholder-neutral-500 focus:outline-none focus:border-primary-500"
-                />
-                <Button variant="primary" fullWidth size="sm">Subscribe</Button>
-              </form>
-            </div>
           </div>
 
           <div className="border-t border-neutral-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-neutral-500">
