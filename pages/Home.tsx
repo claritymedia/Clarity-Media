@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Layout } from '../components/Layout';
 import { Button, Section, Heading, FadeIn } from '../components/ui/UI';
-import { ArrowRight, Check, Users, Mic, Camera, TrendingUp, BarChart3, Globe, Mail, Calendar, Workflow, GraduationCap, Phone, Star, Smartphone, MessageSquare, Award } from 'lucide-react';
+import { ArrowRight, Check, Users, Mic, Camera, TrendingUp, BarChart3, Globe, Mail, Calendar, Workflow, GraduationCap, Phone, Star, Smartphone, MessageSquare } from 'lucide-react';
 
 const softwareReplaces = [
   { name: "CRM & Pipeline Management", icon: <Users size={18} /> },
@@ -21,13 +21,13 @@ const softwareReplaces = [
   { name: "Mobile App", icon: <Smartphone size={18} /> },
 ];
 
-const awards = [
-  { img: "https://www.gocanvas.com/wp-content/uploads/2023/12/G2-Momentum-Leader-Spring-2024.png", label: "Momentum Leader" },
-  { img: "https://www.gocanvas.com/wp-content/uploads/2023/12/Capterra-Shortlist-2024.png", label: "Capterra Shortlist" },
-  { img: "https://www.gocanvas.com/wp-content/uploads/2023/12/GetApp-Category-Leaders-2024.png", label: "Category Leader" },
-  { img: "https://www.gocanvas.com/wp-content/uploads/2023/12/Software-Advice-FrontRunners-2024.png", label: "Most Recommended" },
-  { img: "https://www.gocanvas.com/wp-content/uploads/2023/12/G2-Regional-Leader-Spring-2024.png", label: "Regional Leader" },
-  { img: "https://www.gocanvas.com/wp-content/uploads/2023/12/G2-Grid-Leader-Spring-2024.png", label: "Grid Leader" },
+const capabilityHighlights = [
+  { icon: <Star size={22} />, name: "Reputation Management", desc: "Automatically request, monitor, and respond to reviews across Google & Facebook." },
+  { icon: <Workflow size={22} />, name: "Workflow Automations", desc: "Follow-ups, reminders, and nurture sequences run themselves in the background." },
+  { icon: <Smartphone size={22} />, name: "2-Way SMS Marketing", desc: "Text your leads and clients directly, right from the same dashboard as email." },
+  { icon: <Calendar size={22} />, name: "Booking & Appointments", desc: "Clients self-schedule straight into your calendar, no back-and-forth required." },
+  { icon: <BarChart3 size={22} />, name: "Tracking & Analytics", desc: "See exactly which calls, forms, and campaigns are actually driving revenue." },
+  { icon: <Users size={22} />, name: "CRM & Pipeline", desc: "Every lead and client tracked in one place, so nothing slips through the cracks." },
 ];
 
 const heroImage = "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&q=80&w=2000";
@@ -108,30 +108,19 @@ export const Home: React.FC = () => {
         </div>
 
         <div className="container mx-auto px-4 mt-16 max-w-6xl">
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 md:gap-8 items-center justify-items-center opacity-85 md:opacity-70 hover:opacity-100 transition-opacity duration-500">
-            {awards.map((award, i) => (
-              <div key={i} className="flex flex-col items-center text-center gap-3 group w-full">
-                <div className="h-16 w-full flex items-center justify-center">
-                  <img 
-                    src={award.img} 
-                    alt={award.label} 
-                    className="max-h-16 max-w-[120px] w-auto h-auto grayscale md:grayscale group-hover:grayscale-0 transition-all duration-300 object-contain"
-                    loading="lazy"
-                    onError={(e) => {
-                      // Fallback if image fails to load
-                      const target = e.target as HTMLImageElement;
-                      target.style.display = 'none';
-                      const parent = target.parentElement;
-                      if (parent && !parent.querySelector('.fallback-icon')) {
-                        const icon = document.createElement('div');
-                        icon.className = 'fallback-icon text-primary-300 flex flex-col items-center';
-                        icon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg>`;
-                        parent.appendChild(icon);
-                      }
-                    }}
-                  />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {capabilityHighlights.map((item, i) => (
+              <div
+                key={i}
+                className="flex items-start gap-4 p-5 bg-neutral-50 rounded-xl border border-neutral-100 hover:border-primary-200 hover:bg-white hover:shadow-md transition-all duration-300"
+              >
+                <div className="text-primary-600 bg-primary-50 p-2.5 rounded-lg shrink-0">
+                  {item.icon}
                 </div>
-                <span className="text-[10px] font-bold uppercase tracking-wider text-neutral-500 group-hover:text-primary-600 transition-colors">{award.label}</span>
+                <div>
+                  <h3 className="font-bold text-sm text-neutral-900 mb-1">{item.name}</h3>
+                  <p className="text-xs text-neutral-500 leading-relaxed">{item.desc}</p>
+                </div>
               </div>
             ))}
           </div>
