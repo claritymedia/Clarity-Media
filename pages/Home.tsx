@@ -31,7 +31,7 @@ const capabilityHighlights = [
 ];
 
 const heroImage = "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&q=80&w=2000";
-const teamPhoto = "https://storage.googleapis.com/msgsndr/DGQtullATQRfPaFbP0kV/media/6988a6c00a7fd109982b6ae3.png";
+const teamPhoto = "https://assets.cdn.filesafe.space/DGQtullATQRfPaFbP0kV/media/6a7be44d4e002388f4503a37.png";
 const podcastPhoto = "https://storage.googleapis.com/msgsndr/DGQtullATQRfPaFbP0kV/media/699343a867cb8440809b24d0.png";
 
 export const Home: React.FC = () => {
