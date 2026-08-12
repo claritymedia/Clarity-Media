@@ -109,13 +109,13 @@ export const PulsePartners: React.FC = () => {
   return (
     <Layout>
         {/* Hero Header */}
-        <div className="relative bg-neutral-900 overflow-hidden md:min-h-[70vh] md:flex md:items-center">
+        <div className="relative bg-neutral-900 overflow-hidden md:flex md:items-center md:aspect-[16/7] md:min-h-[520px]">
             <div className="relative md:absolute md:inset-0 z-0">
                 <img 
                     src={teamPhoto} 
                     alt="Pulse Partners Team" 
                     className="w-full h-[280px] md:h-full object-cover opacity-90 md:scale-110"
-                    style={{ objectPosition: 'center 48%' }}
+                    style={{ objectPosition: 'center 52%' }}
                 />
                 <div className="hidden md:block absolute inset-0 bg-neutral-900/50"></div>
                 <div className="hidden md:block absolute inset-0 bg-gradient-to-t from-neutral-900 via-neutral-900/20 to-transparent"></div>
