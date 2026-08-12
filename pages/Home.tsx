@@ -31,7 +31,7 @@ const capabilityHighlights = [
 ];
 
 const heroImage = "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&q=80&w=2000";
-const teamPhoto = "https://assets.cdn.filesafe.space/DGQtullATQRfPaFbP0kV/media/6a7be44d4e002388f4503a37.png";
+const teamPhoto = "https://assets.cdn.filesafe.space/DGQtullATQRfPaFbP0kV/media/6a7befddfe4291bd10eace63.png";
 const podcastPhoto = "https://storage.googleapis.com/msgsndr/DGQtullATQRfPaFbP0kV/media/699343a867cb8440809b24d0.png";
 
 export const Home: React.FC = () => {
@@ -161,7 +161,7 @@ export const Home: React.FC = () => {
 
         <div className="grid md:grid-cols-12 gap-6">
             <div className="md:col-span-8 relative group overflow-hidden rounded-2xl h-[400px] md:h-[500px]">
-                <img src={teamPhoto} alt="Pulse Partners" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <img src={teamPhoto} alt="Pulse Partners" style={{ objectPosition: 'center 75%' }} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-8 md:p-10 z-10 text-white">
                     <div className="bg-primary-500 text-white text-xs font-bold px-3 py-1 rounded-full inline-block mb-4">FLAGSHIP SERVICE</div>
