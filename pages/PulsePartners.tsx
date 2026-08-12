@@ -114,7 +114,7 @@ export const PulsePartners: React.FC = () => {
                 <img 
                     src={teamPhoto} 
                     alt="Pulse Partners Team" 
-                    className="w-full h-full object-cover grayscale opacity-80"
+                    className="w-full h-full object-cover opacity-90"
                     style={{ objectPosition: 'center 30%' }}
                 />
                 <div className="absolute inset-0 bg-neutral-900/50"></div>
