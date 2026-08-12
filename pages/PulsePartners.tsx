@@ -115,7 +115,7 @@ export const PulsePartners: React.FC = () => {
                     src={teamPhoto} 
                     alt="Pulse Partners Team" 
                     className="w-full h-full object-cover grayscale opacity-80"
-                    style={{ objectPosition: 'center 62%' }}
+                    style={{ objectPosition: 'center 30%' }}
                 />
                 <div className="absolute inset-0 bg-neutral-900/50"></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 via-neutral-900/20 to-transparent"></div>
