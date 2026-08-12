@@ -160,10 +160,10 @@ export const Home: React.FC = () => {
         </div>
 
         <div className="grid md:grid-cols-12 gap-6">
-            <div className="md:col-span-8 relative group overflow-hidden rounded-2xl h-[400px] md:h-[500px]">
-                <img src={teamPhoto} alt="Pulse Partners" style={{ objectPosition: 'center 75%' }} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
-                <div className="absolute bottom-0 left-0 p-8 md:p-10 z-10 text-white">
+            <div className="md:col-span-8 relative group overflow-hidden rounded-2xl bg-neutral-900 md:h-[500px]">
+                <img src={teamPhoto} alt="Pulse Partners" style={{ objectPosition: 'center 75%' }} className="w-full h-[260px] object-cover md:absolute md:inset-0 md:h-full transition-transform duration-700 group-hover:scale-105" />
+                <div className="hidden md:block absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+                <div className="relative p-8 md:absolute md:bottom-0 md:left-0 md:p-10 z-10 text-white">
                     <div className="bg-primary-500 text-white text-xs font-bold px-3 py-1 rounded-full inline-block mb-4">FLAGSHIP SERVICE</div>
                     <h3 className="text-3xl font-bold mb-3">Pulse Partners</h3>
                     <p className="text-neutral-200 mb-6 max-w-lg">A dedicated three-person team working inside your business weekly. Strategy, content, and execution all in one.</p>
