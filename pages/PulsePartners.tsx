@@ -6,7 +6,7 @@ import { Section, Heading, Button, Card, FadeIn } from '../components/ui/UI';
 import { Check, X as XIcon, Users, Monitor, Calendar, TrendingUp, Brain, Rocket, Mic, Camera, ShieldAlert, Zap, HeartPulse, Sparkles, ArrowRight } from 'lucide-react';
 
 export const PulsePartners: React.FC = () => {
-  const teamPhoto = "https://storage.googleapis.com/msgsndr/DGQtullATQRfPaFbP0kV/media/6988a6c00a7fd109982b6ae3.png";
+  const teamPhoto = "https://assets.cdn.filesafe.space/DGQtullATQRfPaFbP0kV/media/6a7befddfe4291bd10eace63.png";
   const communityPhoto = "https://storage.googleapis.com/msgsndr/DGQtullATQRfPaFbP0kV/media/6995eabdfa6b7b75143157bc.png";
 
   const packages = [
@@ -115,6 +115,7 @@ export const PulsePartners: React.FC = () => {
                     src={teamPhoto} 
                     alt="Pulse Partners Team" 
                     className="w-full h-full object-cover grayscale opacity-80"
+                    style={{ objectPosition: 'center 62%' }}
                 />
                 <div className="absolute inset-0 bg-neutral-900/50"></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 via-neutral-900/20 to-transparent"></div>
