@@ -6,7 +6,7 @@ import { Section, Heading, Button, Card, FadeIn } from '../components/ui/UI';
 import { Check, X as XIcon, Users, Monitor, Calendar, TrendingUp, Brain, Rocket, Mic, Camera, ShieldAlert, Zap, HeartPulse, Sparkles, ArrowRight } from 'lucide-react';
 
 export const PulsePartners: React.FC = () => {
-  const teamPhoto = "https://storage.googleapis.com/msgsndr/DGQtullATQRfPaFbP0kV/media/6988a6c00a7fd109982b6ae3.png";
+  const teamPhoto = "https://assets.cdn.filesafe.space/DGQtullATQRfPaFbP0kV/media/6a7befddfe4291bd10eace63.png";
   const communityPhoto = "https://storage.googleapis.com/msgsndr/DGQtullATQRfPaFbP0kV/media/6995eabdfa6b7b75143157bc.png";
 
   const packages = [
@@ -109,18 +109,19 @@ export const PulsePartners: React.FC = () => {
   return (
     <Layout>
         {/* Hero Header */}
-        <div className="relative min-h-[60vh] flex items-center bg-neutral-900 overflow-hidden">
-            <div className="absolute inset-0 z-0">
+        <div className="relative bg-neutral-900 overflow-hidden md:flex md:items-center md:aspect-[16/7] md:min-h-[520px]">
+            <div className="relative md:absolute md:inset-0 z-0">
                 <img 
                     src={teamPhoto} 
                     alt="Pulse Partners Team" 
-                    className="w-full h-full object-cover grayscale opacity-80"
+                    className="w-full h-[280px] md:h-full object-cover opacity-90 md:scale-110"
+                    style={{ objectPosition: 'center 52%' }}
                 />
-                <div className="absolute inset-0 bg-neutral-900/50"></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 via-neutral-900/20 to-transparent"></div>
+                <div className="hidden md:block absolute inset-0 bg-neutral-900/50"></div>
+                <div className="hidden md:block absolute inset-0 bg-gradient-to-t from-neutral-900 via-neutral-900/20 to-transparent"></div>
             </div>
 
-            <div className="container mx-auto px-4 md:px-6 text-center relative z-10">
+            <div className="container mx-auto px-4 md:px-6 text-center relative z-10 py-14 md:py-0">
                 <FadeIn delay={0.1}>
                     <span className="text-primary-300 font-bold tracking-wider text-sm uppercase mb-4 block">The Flagship Program</span>
                     <h1 className="text-4xl md:text-7xl font-bold text-white mb-6 drop-shadow-lg">Pulse Partners</h1>

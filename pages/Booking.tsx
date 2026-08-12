@@ -44,7 +44,7 @@ export const Booking: React.FC = () => {
         </FadeIn>
 
         <div className="mt-12 text-center text-neutral-500 text-sm">
-          <p>Having trouble with the calendar? <a href="mailto:support@claritymedia.com" className="text-primary-600 underline">Email us directly</a>.</p>
+          <p>Having trouble with the calendar? <a href="mailto:connect@claritymedia.life" className="text-primary-600 underline">Email us directly</a>.</p>
         </div>
       </Section>
     </Layout>
