@@ -101,7 +101,6 @@ export const Home: React.FC = () => {
                   {item.icon}
                 </div>
                 <span className="font-bold text-sm md:text-base text-neutral-700">{item.name}</span>
-                <span className="text-[10px] font-bold text-neutral-300 ml-2 italic">REPLACED</span>
               </div>
             ))}
           </div>
